@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B09E10829F90E050031CB43 /* urlSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B09E10729F90E050031CB43 /* urlSession.swift */; };
+		2B09E10A29F90E3E0031CB43 /* service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B09E10929F90E3E0031CB43 /* service.swift */; };
 		2BA1F16E29F134C4001BF4CB /* swiftDataNetworkingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA1F16D29F134C4001BF4CB /* swiftDataNetworkingApp.swift */; };
 		2BA1F17029F134C4001BF4CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA1F16F29F134C4001BF4CB /* ContentView.swift */; };
 		2BA1F17229F134C5001BF4CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA1F17129F134C5001BF4CB /* Assets.xcassets */; };
 		2BA1F17529F134C5001BF4CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA1F17429F134C5001BF4CB /* Preview Assets.xcassets */; };
+		2BA1F17F29F1367E001BF4CB /* Init.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BA1F17E29F1367E001BF4CB /* Init.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B09E10729F90E050031CB43 /* urlSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = urlSession.swift; sourceTree = "<group>"; };
+		2B09E10929F90E3E0031CB43 /* service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = service.swift; sourceTree = "<group>"; };
 		2BA1F16A29F134C4001BF4CB /* swiftDataNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftDataNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BA1F16D29F134C4001BF4CB /* swiftDataNetworkingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftDataNetworkingApp.swift; sourceTree = "<group>"; };
 		2BA1F16F29F134C4001BF4CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2BA1F17129F134C5001BF4CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BA1F17429F134C5001BF4CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2BA1F17E29F1367E001BF4CB /* Init.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Init.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +57,16 @@
 		2BA1F16C29F134C4001BF4CB /* swiftDataNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				2BA1F17D29F13517001BF4CB /* ModelView */,
+				2BA1F17C29F13511001BF4CB /* View */,
+				2BA1F17B29F13509001BF4CB /* Model */,
 				2BA1F16D29F134C4001BF4CB /* swiftDataNetworkingApp.swift */,
 				2BA1F16F29F134C4001BF4CB /* ContentView.swift */,
+				2B09E10929F90E3E0031CB43 /* service.swift */,
+				2B09E10729F90E050031CB43 /* urlSession.swift */,
 				2BA1F17129F134C5001BF4CB /* Assets.xcassets */,
 				2BA1F17329F134C5001BF4CB /* Preview Content */,
+				2BA1F17E29F1367E001BF4CB /* Init.plist */,
 			);
 			path = swiftDataNetworking;
 			sourceTree = "<group>";
@@ -65,6 +77,27 @@
 				2BA1F17429F134C5001BF4CB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2BA1F17B29F13509001BF4CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2BA1F17C29F13511001BF4CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2BA1F17D29F13517001BF4CB /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BA1F17F29F1367E001BF4CB /* Init.plist in Resources */,
 				2BA1F17529F134C5001BF4CB /* Preview Assets.xcassets in Resources */,
 				2BA1F17229F134C5001BF4CB /* Assets.xcassets in Resources */,
 			);
@@ -138,6 +172,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BA1F17029F134C4001BF4CB /* ContentView.swift in Sources */,
+				2B09E10A29F90E3E0031CB43 /* service.swift in Sources */,
+				2B09E10829F90E050031CB43 /* urlSession.swift in Sources */,
 				2BA1F16E29F134C4001BF4CB /* swiftDataNetworkingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
